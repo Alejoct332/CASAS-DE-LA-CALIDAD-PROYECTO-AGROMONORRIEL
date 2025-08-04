@@ -18,7 +18,7 @@
 <body>
   <h1>Casas de la Calidad - AgroMonorriel</h1>
 
-  <p>Este repositorio consolida el análisis QFD del sistema <strong>AgroMonorriel</strong>; aquí están las <em>Casas de la Calidad</em>, material complementario y visualizaciones clave.</p>
+  <p>Este repositorio consolida el análisis QFD del sistema <strong>AgroMonorriel</strong>; aquí están las <em>Casas de la Calidad</em>, el archivo de datos y material visual.</p>
 
   <section>
     <h2>1. Documento descargable</h2>
@@ -50,16 +50,32 @@
   </section>
 
   <section>
-    <h2>3. Datos adicionales</h2>
-    <p>Si tienes un archivo Excel con métricas, pesos, o datos de respaldo, lo puedes consultar y descargar aquí:</p>
+    <h2>3. Datos (Excel)</h2>
+    <p>Los datos de soporte y métricas están en el archivo Excel:</p>
     <p class="download">
-      <a class="button" href="data/casas_calidad.xlsx" download>📊 Descargar datos (Excel)</a>
+      <a class="button" href="CASA_DE_CALIDAD_AGRONORRIEL.xlsx" download>📊 Descargar Excel de Casas de la Calidad</a>
     </p>
-    <p class="small">GitHub muestra una vista previa del Excel; si quieres incrustarlo más avanzado, se puede convertir a CSV o usar GitHub Pages + JavaScript para leerlo.</p>
+    <p class="small">GitHub permite vista previa del Excel directamente desde la interfaz. Si querés mostrarlo embebido en la página sin que el usuario lo descargue, convertí el Excel a CSV y usá este script:</p>
+
+    <pre><code>&lt;script>
+fetch('CASA_DE_CALIDAD_AGRONORRIEL.csv')
+  .then(res => res.text())
+  .then(txt => {
+    const lines = txt.split('\n');
+    let html = '&lt;h3>Vista rápida del Excel&lt;/h3>&lt;table border="1">';
+    lines.forEach(r => {
+      html += '&lt;tr>' + r.split(',').map(c => `&lt;td>${c}&lt;/td>`).join('') + '&lt;/tr>';
+    });
+    html += '&lt;/table>';
+    document.body.insertAdjacentHTML('beforeend', html);
+  });
+&lt;/script></code></pre>
+
+    <p class="small">Eso exige que tengas `CASA_DE_CALIDAD_AGRONORRIEL.csv` en la raíz (lo exportás desde Excel y lo subís con el mismo flujo).</p>
   </section>
 
   <footer>
-    <p class="small">Hecho por el equipo del AgroMonorriel. Actualiza el contenido con commits claros: “actualiza resumen”, “agrega imagen”, “refina Excel”.</p>
+    <p class="small">Hecho por el equipo del AgroMonorriel. Usa commits descriptivos: “actualiza índice”, “agrega imagen”, “refina Excel”.</p>
   </footer>
 </body>
 </html>
