@@ -55,23 +55,6 @@
     <p class="download">
       <a class="button" href="CASA_DE_CALIDAD_AGRONORRIEL.xlsx" download>📊 Descargar Excel de Casas de la Calidad</a>
     </p>
-    <p class="small">GitHub permite vista previa del Excel directamente desde la interfaz. Si querés mostrarlo embebido en la página sin que el usuario lo descargue, convertí el Excel a CSV y usá este script:</p>
-
-    <pre><code>&lt;script>
-fetch('CASA_DE_CALIDAD_AGRONORRIEL.csv')
-  .then(res => res.text())
-  .then(txt => {
-    const lines = txt.split('\n');
-    let html = '&lt;h3>Vista rápida del Excel&lt;/h3>&lt;table border="1">';
-    lines.forEach(r => {
-      html += '&lt;tr>' + r.split(',').map(c => `&lt;td>${c}&lt;/td>`).join('') + '&lt;/tr>';
-    });
-    html += '&lt;/table>';
-    document.body.insertAdjacentHTML('beforeend', html);
-  });
-&lt;/script></code></pre>
-
-    <p class="small">Eso exige que tengas `CASA_DE_CALIDAD_AGRONORRIEL.csv` en la raíz (lo exportás desde Excel y lo subís con el mismo flujo).</p>
   </section>
 
   <footer>
@@ -79,3 +62,4 @@ fetch('CASA_DE_CALIDAD_AGRONORRIEL.csv')
   </footer>
 </body>
 </html>
+
