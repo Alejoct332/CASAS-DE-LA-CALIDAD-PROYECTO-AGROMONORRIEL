@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>AgroMonorriel - Casas de la Calidad</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 2rem auto; line-height: 1.4; padding: 0 1rem; }
+    h1, h2 { color: #1f3e75; }
+    .cards { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .card { border: 1px solid #ccc; border-radius: 8px; padding: 0.75rem; flex: 1 1 250px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); }
+    img { max-width: 100%; height: auto; border-radius: 4px; }
+    .download { margin: .5rem 0; }
+    a.button { display: inline-block; padding: .5rem .8rem; background:#2d89ef; color:#fff; border-radius:6px; text-decoration:none; font-weight:600; }
+    .small { font-size:.9em; color:#555; }
+  </style>
+</head>
+<body>
+  <h1>Casas de la Calidad - AgroMonorriel</h1>
+
+  <p>Este repositorio consolida el análisis QFD del sistema <strong>AgroMonorriel</strong>; aquí están las <em>Casas de la Calidad</em>, material complementario y visualizaciones clave.</p>
+
+  <section>
+    <h2>1. Documento descargable</h2>
+    <p>La sección completa de <strong>Casas de la Calidad</strong> está en el PDF:</p>
+    <p class="download">
+      <a class="button" href="docs/casas_de_calidad.pdf" download>📄 Descargar Casas de la Calidad (PDF)</a>
+    </p>
+  </section>
+
+  <section>
+    <h2>2. Imágenes</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Casa de la Calidad 1</h3>
+        <img src="images/casa_calidad_1.png" alt="Casa de la Calidad 1" />
+        <p class="small">Requerimientos del cliente vs funcionales.</p>
+      </div>
+      <div class="card">
+        <h3>Casa de la Calidad 2</h3>
+        <img src="images/casa_calidad_2.png" alt="Casa de la Calidad 2" />
+        <p class="small">Requerimientos funcionales vs atributos.</p>
+      </div>
+      <div class="card">
+        <h3>Casa de la Calidad 3</h3>
+        <img src="images/casa_calidad_3.png" alt="Casa de la Calidad 3" />
+        <p class="small">Atributos vs parámetros de materiales.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>3. Datos adicionales</h2>
+    <p>Si tienes un archivo Excel con métricas, pesos, o datos de respaldo, lo puedes consultar y descargar aquí:</p>
+    <p class="download">
+      <a class="button" href="data/casas_calidad.xlsx" download>📊 Descargar datos (Excel)</a>
+    </p>
+    <p class="small">GitHub muestra una vista previa del Excel; si quieres incrustarlo más avanzado, se puede convertir a CSV o usar GitHub Pages + JavaScript para leerlo.</p>
+  </section>
+
+  <footer>
+    <p class="small">Hecho por el equipo del AgroMonorriel. Actualiza el contenido con commits claros: “actualiza resumen”, “agrega imagen”, “refina Excel”.</p>
+  </footer>
+</body>
+</html>
