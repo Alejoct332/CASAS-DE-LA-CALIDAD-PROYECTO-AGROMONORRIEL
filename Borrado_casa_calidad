@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>AgroMonorriel - Casas de la Calidad</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+</head>
+<body>
+  <h1>Casas de la Calidad - AgroMonorriel</h1>
+  <p>Resumen breve del enfoque QFD y las tres casas de la calidad.</p>
+  <h2>Documentos</h2>
+  <p><a href="docs/casas_de_calidad.pdf" download>Descargar sección de Casas de la Calidad</a></p>
+  <h2>Imágenes</h2>
+  <img src="images/casa1.png" alt="Casa 1" style="max-width:300px;" />
+  <img src="images/casa2.png" alt="Casa 2" style="max-width:300px;" />
+  <img src="images/casa3.png" alt="Casa 3" style="max-width:300px;" />
+</body>
+</html>
